@@ -27,7 +27,6 @@ function loadTiledMap(path)
               for x = 0, layer.width - 1 do
                   local index = (x + y * layer.width) + 1
                   local tid = layer.data[index]
-                  print(self.tileset.tiles.id)
 
                   if tid ~= 0 then
                       local quad = self.quads[tid]
@@ -42,6 +41,15 @@ function loadTiledMap(path)
                       )
 
 
+                      if self.tileset.tiles[tid].properties["Collision"] == true then
+                        testBlock = world:newRectangleCollider(
+                          xx,
+                          yy,
+                          self.tileset.tilewidth,
+                          self.tileset.tileheight
+                        )
+                        testBlock:setType('static')
+                      end
                   end
               end
           end
