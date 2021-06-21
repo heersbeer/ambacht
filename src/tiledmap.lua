@@ -27,9 +27,9 @@ function loadTiledMap(path)
               for x = 0, layer.width - 1 do
                   local index = (x + y * layer.width) + 1
                   local tid = layer.data[index]
+                  print(self.tileset.tiles.id)
 
                   if tid ~= 0 then
-
                       local quad = self.quads[tid]
                       local xx = x * self.tileset.tilewidth
                       local yy = y * self.tileset.tileheight
@@ -40,6 +40,8 @@ function loadTiledMap(path)
                           xx,
                           yy
                       )
+
+
                   end
               end
           end

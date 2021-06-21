@@ -1,7 +1,5 @@
 function love.load()
 
-  love.window.setMode(1024, 768, {resizable=false})
-
   windfield = require('lib/windfield/')
   anim8 = require('lib/anim8/anim8')
   world = windfield.newWorld()
@@ -14,10 +12,9 @@ function love.load()
   require('src/player')
   require('src/tiledmap')
 
-  map = loadTiledMap('gfx/tiles/tiletest')
+  map = loadTiledMap('gfx/tiles/rpg_pack')
 
-  --testBlock = world:newRectangleCollider(282, -90, 198, 198)
-  --testBlock:setType('static')
+
 end
 
 function love.update(dt)
