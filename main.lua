@@ -1,7 +1,8 @@
 function love.load()
 
-  windfield = require('lib/windfield/')
+  windfield = require('lib/windfield/windfield')
   anim8 = require('lib/anim8/anim8')
+  camera = require('lib/hump.camera')
   world = windfield.newWorld()
   require('conf')
 
