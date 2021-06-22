@@ -2,9 +2,8 @@ function love.load()
 
   windfield = require('lib/windfield/windfield')
   anim8 = require('lib/anim8/anim8')
-  camera = require('lib/hump.camera')
   world = windfield.newWorld()
-  require('conf')
+  local _camera = require('lib/hump.camera')
 
   require("src/collisionClasses")
   createCollisionClasses()
@@ -14,17 +13,36 @@ function love.load()
   require('src/tiledmap')
 
   map = loadTiledMap('gfx/tiles/rpg_pack')
-
+  camera = _camera(player.x, player.y)
+--[[
+  camera:lockWindow(
+    player.x,
+    player.y,
+    player.x - 50,
+    player.x + 50,
+    player.y -50,
+    player.y +50
+  )
+]]--
 end
 
 function love.update(dt)
+  local dx,dy = player.x - camera.x, player.y - camera.y
+  camera:move(dx/2, dy/2)
+
+
   map:update(dt)
   player:update(dt)
   world:update(dt)
 end
 
 function love.draw()
+
+  world:draw()
+
+
+  camera:attach()
   map:draw()
   player:draw()
-  world:draw()
+  camera:detach()
 end

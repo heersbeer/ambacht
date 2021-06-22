@@ -1,4 +1,4 @@
-player = world:newRectangleCollider(512, 368, 30, 50)
+player = world:newRectangleCollider(400, 368, 30, 50)
 player:setCollisionClass("Player")
 
 player.x = love.graphics.getWidth() / 2
@@ -32,11 +32,13 @@ function player:update(dt)
       vectorX = -1
       player.anim = player.animations.walkLeft
       player.dir = "left"
+      player.x = player.x - player.speed*dt
   end
   if love.keyboard.isDown("d") then
       vectorX = 1
       player.anim = player.animations.walkRight
       player.dir = "right"
+      player.x = player.x + player.speed*dt
   end
   if love.keyboard.isDown("w") then
       vectorY = -1
