@@ -40,7 +40,6 @@ function loadTiledMap(path)
                           yy
                       )
 
-
                       if self.tileset.tiles[tid].properties["Collision"] == true then
                         testBlock = world:newRectangleCollider(
                           xx,
