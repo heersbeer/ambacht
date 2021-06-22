@@ -14,10 +14,10 @@ function love.load()
 
   map = loadTiledMap('gfx/tiles/rpg_pack')
 
-
 end
 
 function love.update(dt)
+  map:update(dt)
   player:update(dt)
   world:update(dt)
 end

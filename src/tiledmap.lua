@@ -7,6 +7,10 @@ function loadTiledMap(path)
   map.tileset = tileset
   map.image = love.graphics.newImage(tileset.image)
 
+  map.frame = 0
+  map.timer = 0.0
+  map.maxTimer = 0.1
+
   for y = 0, (tileset.imageheight / tileset.tileheight) - 1 do
       for x = 0, (tileset.imagewidth / tileset.tilewidth) - 1 do
           local quad = love.graphics.newQuad(
@@ -19,6 +23,15 @@ function loadTiledMap(path)
           )
           table.insert(map.quads, quad)
       end
+  end
+
+  function map:update(dt)
+      if self.timer > self.maxTimer then
+          self.frame = self.frame + 1
+          self.timer = 0
+      end
+
+      self.timer = self.timer + dt
   end
 
   function map:draw()
@@ -39,7 +52,6 @@ function loadTiledMap(path)
                           xx,
                           yy
                       )
-
 
                       if self.tileset.tiles[tid].properties["Collision"] == true then
                         testBlock = world:newRectangleCollider(
