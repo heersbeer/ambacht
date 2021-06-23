@@ -1,4 +1,4 @@
-player = world:newRectangleCollider(512, 368, 30, 50)
+player = world:newRectangleCollider(200, 416, 30, 50)
 player:setCollisionClass("Player")
 
 player.x = love.graphics.getWidth() / 2

@@ -13,6 +13,7 @@ function love.load()
   require('src/tiledmap')
 
   map = loadTiledMap('gfx/tiles/rpg_pack')
+  print(player.x, player.y)
   camera = _camera(player.x, player.y)
 --[[
   camera:lockWindow(
@@ -29,7 +30,7 @@ end
 function love.update(dt)
   local dx,dy = player.x - camera.x, player.y - camera.y
   camera:move(dx, dy)
-
+  print(player.x, player.y)
   map:update(dt)
   player:update(dt)
   world:update(dt)
