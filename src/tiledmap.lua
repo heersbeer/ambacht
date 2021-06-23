@@ -34,7 +34,7 @@ function loadTiledMap(path)
       self.timer = self.timer + dt
   end
 
-  function map:draw(dx, dy)
+  function map:draw()
       for i, layer in ipairs(self.layers) do
           for y = 0, layer.height - 1 do
               for x = 0, layer.width - 1 do

@@ -7,3 +7,6 @@
 [submodule "lib/windfield"]
 	path = lib/windfield
 	url = https://github.com/a327ex/windfield.git
+[submodule "lib/Simple-Tiled-Implementation"]
+	path = lib/Simple-Tiled-Implementation
+	url = https://github.com/karai17/Simple-Tiled-Implementation.git

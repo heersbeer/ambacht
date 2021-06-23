@@ -28,20 +28,17 @@ end
 
 function love.update(dt)
   local dx,dy = player.x - camera.x, player.y - camera.y
-  camera:move(dx/2, dy/2)
-
+  camera:move(dx, dy)
 
   map:update(dt)
   player:update(dt)
   world:update(dt)
+
 end
 
 function love.draw()
-
-  world:draw()
-
-
   camera:attach()
+  world:draw()
   map:draw()
   player:draw()
   camera:detach()
