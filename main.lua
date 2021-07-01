@@ -12,28 +12,35 @@ function love.load()
   require('src/player')
   require('src/tiledmap')
 
-  map = loadTiledMap('gfx/tiles/rpg_pack')
-  print(player.x, player.y)
+  map = loadTiledMap('gfx/tiles/map')
   camera = _camera(player.x, player.y)
---[[
+  camera.smoother = _camera.smooth.linear(130)
+  --[[
   camera:lockWindow(
     player.x,
     player.y,
-    player.x - 50,
-    player.x + 50,
-    player.y -50,
-    player.y +50
+    200,
+    600,
+    150,
+    450
   )
-]]--
+  ]]--
 end
 
 function love.update(dt)
+
+
+  world:update(dt)
+
+  map:update(dt)
+
   local dx,dy = player.x - camera.x, player.y - camera.y
   camera:move(dx, dy)
-  print(player.x, player.y)
-  map:update(dt)
   player:update(dt)
-  world:update(dt)
+
+  if love.keyboard.isDown("escape") then
+      love.event.quit()
+  end
 
 end
 

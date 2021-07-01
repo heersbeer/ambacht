@@ -61,6 +61,7 @@ function loadTiledMap(path)
                           self.tileset.tileheight
                         )
                         testBlock:setType('static')
+                        testBlock:setCollisionClass('Solid')
                       end
                   end
               end

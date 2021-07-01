@@ -1,4 +1,4 @@
-player = world:newRectangleCollider(200, 416, 30, 50)
+player = world:newRectangleCollider(love.graphics.getWidth()/2, love.graphics.getHeight()/2, 30, 50)
 player:setCollisionClass("Player")
 
 player.x = love.graphics.getWidth() / 2
@@ -8,6 +8,7 @@ player.height = 64
 player.speed = 130
 player.isMoving = false
 player.dir = "down"
+
 
 player.grids = {}
 player.grids.walk = anim8.newGrid(player.width, player.height, textures.player:getWidth(), textures.player:getHeight(), 0, 6, 0)
@@ -23,6 +24,7 @@ player.anim = player.animations.walkDown
 function player:update(dt)
   if player.isMoving then
       player.anim:update(dt)
+      print(player.isMoving)
   end
 
   local vectorX = 0
@@ -33,6 +35,7 @@ function player:update(dt)
       player.anim = player.animations.walkLeft
       player.dir = "left"
       player.x = player.x - player.speed*dt
+      
   end
   if love.keyboard.isDown("d") then
       vectorX = 1
