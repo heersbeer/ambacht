@@ -33,10 +33,10 @@ function love.update(dt)
   camera:lockWindow(
     camX,
     camY,
-    300,
-    500,
-    220,
-    380
+    (love.graphics.getWidth()/2) - 200,
+    (love.graphics.getWidth()/2) + 200,
+    (love.graphics.getHeight()/2) - 150,
+    (love.graphics.getHeight()/2) + 150
   )
 
   if love.keyboard.isDown("escape") then
