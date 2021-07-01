@@ -23,7 +23,7 @@ end
 function love.update(dt)
 -- gameloop, elke frame update
   world:update(dt)
-  map:update(dt)
+  --map:update(dt)
 
   player:update(dt)
   camX, camY = player:getPosition()

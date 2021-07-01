@@ -54,7 +54,7 @@ function player:update(dt)
       player.y = player.y + player.speed*dt
   end
   if love.keyboard.isDown("space") then
-      -- player queriet straal 40 naar objects in de buurt
+      -- zorgen dat de player alleen in de kijkrichting queriet
       local px, py = player:getPosition()
       if player.dir == "down" then
           py=py + 60
@@ -65,9 +65,15 @@ function player:update(dt)
       elseif player.dir == "up" then
           py = py - 60
         end
-      local colliders = world:queryCircleArea(px, py, 40, {'Queryable'})
-      if #colliders > 0 then
-        print('wroah')
+
+      -- query met straal 20
+      local coll = world:queryCircleArea(px, py, 20, {'Queryable'})
+      if #coll > 0 then
+        for k,v in pairs(coll) do
+          print(k,v)
+        end
+
+        love.timer.sleep(1)
       end
   end
 
