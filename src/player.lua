@@ -34,7 +34,6 @@ function player:update(dt)
       player.anim = player.animations.walkLeft
       player.dir = "left"
       player.x = player.x - player.speed*dt
-
   end
   if love.keyboard.isDown("d") then
       vectorX = 1
@@ -53,6 +52,23 @@ function player:update(dt)
       player.anim = player.animations.walkDown
       player.dir = "down"
       player.y = player.y + player.speed*dt
+  end
+  if love.keyboard.isDown("space") then
+      -- player queriet straal 40 naar objects in de buurt
+      local px, py = player:getPosition()
+      if player.dir == "down" then
+          py=py + 60
+      elseif player.dir == "left" then
+          px = px - 60
+      elseif player.dir == "right" then
+          px = px + 60
+      elseif player.dir == "up" then
+          py = py - 60
+        end
+      local colliders = world:queryCircleArea(px, py, 40, {'Queryable'})
+      if #colliders > 0 then
+        print('wroah')
+      end
   end
 
   player:setLinearVelocity(vectorX * player.speed, vectorY * player.speed)

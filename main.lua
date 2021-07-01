@@ -18,7 +18,6 @@ function love.load()
   --camera.smoother = _camera.smooth.linear(500)
 
 
-
 end
 
 function love.update(dt)

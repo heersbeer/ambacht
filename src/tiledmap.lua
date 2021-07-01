@@ -52,7 +52,7 @@ function loadTiledMap(path)
                           xx,
                           yy
                       )
-
+                      -- nu in map 2 bools, Collision en Queryable. Straks anders doen.
                       if self.tileset.tiles[tid].properties["Collision"] == true then
                         testBlock = world:newRectangleCollider(
                           xx,
@@ -62,6 +62,17 @@ function loadTiledMap(path)
                         )
                         testBlock:setType('static')
                         testBlock:setCollisionClass('Solid')
+                      end
+
+                      if self.tileset.tiles[tid].properties["Queryable"] == true then
+                        testBlock = world:newRectangleCollider(
+                          xx,
+                          yy,
+                          self.tileset.tilewidth,
+                          self.tileset.tileheight
+                        )
+                        testBlock:setType('static')
+                        testBlock:setCollisionClass('Queryable')
                       end
                   end
               end
