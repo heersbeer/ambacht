@@ -24,7 +24,6 @@ player.anim = player.animations.walkDown
 function player:update(dt)
   if player.isMoving then
       player.anim:update(dt)
-      print(player.isMoving)
   end
 
   local vectorX = 0
@@ -35,7 +34,7 @@ function player:update(dt)
       player.anim = player.animations.walkLeft
       player.dir = "left"
       player.x = player.x - player.speed*dt
-      
+
   end
   if love.keyboard.isDown("d") then
       vectorX = 1

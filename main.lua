@@ -1,4 +1,5 @@
 function love.load()
+  -- hier alle init shit definieren, globals, libs, etc
 
   windfield = require('lib/windfield/windfield')
   anim8 = require('lib/anim8/anim8')
@@ -14,29 +15,29 @@ function love.load()
 
   map = loadTiledMap('gfx/tiles/map')
   camera = _camera(player.x, player.y)
-  camera.smoother = _camera.smooth.linear(130)
-  --[[
-  camera:lockWindow(
-    player.x,
-    player.y,
-    200,
-    600,
-    150,
-    450
-  )
-  ]]--
+  --camera.smoother = _camera.smooth.linear(500)
+
+
+
 end
 
 function love.update(dt)
-
-
+-- gameloop, elke frame update
   world:update(dt)
-
   map:update(dt)
 
-  local dx,dy = player.x - camera.x, player.y - camera.y
-  camera:move(dx, dy)
   player:update(dt)
+  camX, camY = player:getPosition()
+  --camera:lookAt(camX, camY)
+
+  camera:lockWindow(
+    camX,
+    camY,
+    300,
+    500,
+    220,
+    380
+  )
 
   if love.keyboard.isDown("escape") then
       love.event.quit()
@@ -45,6 +46,7 @@ function love.update(dt)
 end
 
 function love.draw()
+-- ook gameloop, elke frame, vooral voor graphics, geen vars veranderen
   camera:attach()
   world:draw()
   map:draw()
