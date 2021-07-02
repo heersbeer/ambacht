@@ -17,10 +17,9 @@ function love.load()
 
   map = loadTiledMap('gfx/tiles/map')
   camera = _camera(player.x, player.y)
+
   font = love.graphics.newFont(18)
   love.graphics.setFont(font)
-  --camera.smoother = _camera.smooth.linear(500)
-
 
 end
 
@@ -53,8 +52,6 @@ end
 
 function love.draw()
 -- ook gameloop, elke frame, vooral voor graphics, geen vars veranderen
-
-
   camera:attach()
   world:draw()
   map:draw()
