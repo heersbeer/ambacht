@@ -20,7 +20,7 @@ return {
       spacing = 0,
       margin = 0,
       columns = 40,
-      image = "gfx/tiles/RPGpack_sheet.png",
+      image = "RPGpack_sheet.png",
       imagewidth = 1280,
       imageheight = 832,
       objectalignment = "unspecified",
@@ -7313,7 +7313,7 @@ return {
           id = 808,
           properties = {
             ["Collision"] = false,
-            ["QueryText"] = "Ratten!",
+            ["QueryText"] = "Dit is een boom",
             ["Queryable"] = true,
             ["Type"] = 1
           }
@@ -7322,7 +7322,7 @@ return {
           id = 809,
           properties = {
             ["Collision"] = false,
-            ["QueryText"] = "Ratten!",
+            ["QueryText"] = "Dit is een boom",
             ["Queryable"] = true,
             ["Type"] = 1
           }
@@ -7673,7 +7673,7 @@ return {
           id = 848,
           properties = {
             ["Collision"] = false,
-            ["QueryText"] = "Ratten!",
+            ["QueryText"] = "Dit is een boom",
             ["Queryable"] = true,
             ["Type"] = 1
           }
@@ -7682,7 +7682,7 @@ return {
           id = 849,
           properties = {
             ["Collision"] = false,
-            ["QueryText"] = "Ratten!",
+            ["QueryText"] = "Dit is een boom",
             ["Queryable"] = true,
             ["Type"] = 1
           }
@@ -8033,7 +8033,7 @@ return {
           id = 888,
           properties = {
             ["Collision"] = false,
-            ["QueryText"] = "Ratten!",
+            ["QueryText"] = "Dit is een boom",
             ["Queryable"] = true,
             ["Type"] = 1
           }
@@ -8042,7 +8042,7 @@ return {
           id = 889,
           properties = {
             ["Collision"] = false,
-            ["QueryText"] = "Ratten!",
+            ["QueryText"] = "Dit is een boom",
             ["Queryable"] = true,
             ["Type"] = 1
           }
@@ -8393,7 +8393,7 @@ return {
           id = 928,
           properties = {
             ["Collision"] = false,
-            ["QueryText"] = "Ratten!",
+            ["QueryText"] = "Dit is een boom",
             ["Queryable"] = true,
             ["Type"] = 1
           }
@@ -8402,7 +8402,7 @@ return {
           id = 929,
           properties = {
             ["Collision"] = false,
-            ["QueryText"] = "Ratten!",
+            ["QueryText"] = "Dit is een boom",
             ["Queryable"] = true,
             ["Type"] = 1
           }
@@ -8806,18 +8806,18 @@ return {
         {
           id = 974,
           properties = {
-            ["Collision"] = true,
-            ["QueryText"] = "",
-            ["Queryable"] = false,
+            ["Collision"] = false,
+            ["QueryText"] = "Dit is een hek",
+            ["Queryable"] = true,
             ["Type"] = 0
           }
         },
         {
           id = 975,
           properties = {
-            ["Collision"] = true,
-            ["QueryText"] = "",
-            ["Queryable"] = false,
+            ["Collision"] = false,
+            ["QueryText"] = "Dit is een hek",
+            ["Queryable"] = true,
             ["Type"] = 0
           }
         },
@@ -8843,8 +8843,8 @@ return {
           id = 978,
           properties = {
             ["Collision"] = true,
-            ["QueryText"] = "",
-            ["Queryable"] = false,
+            ["QueryText"] = "Dit is een ton",
+            ["Queryable"] = true,
             ["Type"] = 0
           }
         },
@@ -8852,8 +8852,8 @@ return {
           id = 979,
           properties = {
             ["Collision"] = true,
-            ["QueryText"] = "",
-            ["Queryable"] = false,
+            ["QueryText"] = "Dit is een ton",
+            ["Queryable"] = true,
             ["Type"] = 0
           }
         },
@@ -9166,18 +9166,18 @@ return {
         {
           id = 1014,
           properties = {
-            ["Collision"] = true,
-            ["QueryText"] = "",
-            ["Queryable"] = false,
+            ["Collision"] = false,
+            ["QueryText"] = "Dit is een hek",
+            ["Queryable"] = true,
             ["Type"] = 0
           }
         },
         {
           id = 1015,
           properties = {
-            ["Collision"] = true,
-            ["QueryText"] = "",
-            ["Queryable"] = false,
+            ["Collision"] = false,
+            ["QueryText"] = "Dit is een hek",
+            ["Queryable"] = true,
             ["Type"] = 0
           }
         },
@@ -9203,8 +9203,8 @@ return {
           id = 1018,
           properties = {
             ["Collision"] = true,
-            ["QueryText"] = "",
-            ["Queryable"] = false,
+            ["QueryText"] = "Dit is een ton",
+            ["Queryable"] = true,
             ["Type"] = 0
           }
         },
@@ -9212,8 +9212,8 @@ return {
           id = 1019,
           properties = {
             ["Collision"] = true,
-            ["QueryText"] = "",
-            ["Queryable"] = false,
+            ["QueryText"] = "Dit is een ton",
+            ["Queryable"] = true,
             ["Type"] = 0
           }
         },
@@ -9479,11 +9479,11 @@ return {
       data = {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 809, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 809, 810, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 849, 850, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 889, 890, 0, 975, 976, 0, 979, 980, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 929, 930, 0, 1015, 1016, 0, 1019, 1020, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,

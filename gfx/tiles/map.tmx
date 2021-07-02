@@ -6472,7 +6472,7 @@
   <tile id="808">
    <properties>
     <property name="Collision" type="bool" value="false"/>
-    <property name="QueryText" value="Ratten!"/>
+    <property name="QueryText" value="Dit is een boom"/>
     <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="1"/>
    </properties>
@@ -6480,7 +6480,7 @@
   <tile id="809">
    <properties>
     <property name="Collision" type="bool" value="false"/>
-    <property name="QueryText" value="Ratten!"/>
+    <property name="QueryText" value="Dit is een boom"/>
     <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="1"/>
    </properties>
@@ -6792,7 +6792,7 @@
   <tile id="848">
    <properties>
     <property name="Collision" type="bool" value="false"/>
-    <property name="QueryText" value="Ratten!"/>
+    <property name="QueryText" value="Dit is een boom"/>
     <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="1"/>
    </properties>
@@ -6800,7 +6800,7 @@
   <tile id="849">
    <properties>
     <property name="Collision" type="bool" value="false"/>
-    <property name="QueryText" value="Ratten!"/>
+    <property name="QueryText" value="Dit is een boom"/>
     <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="1"/>
    </properties>
@@ -7112,7 +7112,7 @@
   <tile id="888">
    <properties>
     <property name="Collision" type="bool" value="false"/>
-    <property name="QueryText" value="Ratten!"/>
+    <property name="QueryText" value="Dit is een boom"/>
     <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="1"/>
    </properties>
@@ -7120,7 +7120,7 @@
   <tile id="889">
    <properties>
     <property name="Collision" type="bool" value="false"/>
-    <property name="QueryText" value="Ratten!"/>
+    <property name="QueryText" value="Dit is een boom"/>
     <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="1"/>
    </properties>
@@ -7432,7 +7432,7 @@
   <tile id="928">
    <properties>
     <property name="Collision" type="bool" value="false"/>
-    <property name="QueryText" value="Ratten!"/>
+    <property name="QueryText" value="Dit is een boom"/>
     <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="1"/>
    </properties>
@@ -7440,7 +7440,7 @@
   <tile id="929">
    <properties>
     <property name="Collision" type="bool" value="false"/>
-    <property name="QueryText" value="Ratten!"/>
+    <property name="QueryText" value="Dit is een boom"/>
     <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="1"/>
    </properties>
@@ -7799,17 +7799,17 @@
   </tile>
   <tile id="974">
    <properties>
-    <property name="Collision" type="bool" value="true"/>
-    <property name="QueryText" value=""/>
-    <property name="Queryable" type="bool" value="false"/>
+    <property name="Collision" type="bool" value="false"/>
+    <property name="QueryText" value="Dit is een hek"/>
+    <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="0"/>
    </properties>
   </tile>
   <tile id="975">
    <properties>
-    <property name="Collision" type="bool" value="true"/>
-    <property name="QueryText" value=""/>
-    <property name="Queryable" type="bool" value="false"/>
+    <property name="Collision" type="bool" value="false"/>
+    <property name="QueryText" value="Dit is een hek"/>
+    <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="0"/>
    </properties>
   </tile>
@@ -7832,16 +7832,16 @@
   <tile id="978">
    <properties>
     <property name="Collision" type="bool" value="true"/>
-    <property name="QueryText" value=""/>
-    <property name="Queryable" type="bool" value="false"/>
+    <property name="QueryText" value="Dit is een ton"/>
+    <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="0"/>
    </properties>
   </tile>
   <tile id="979">
    <properties>
     <property name="Collision" type="bool" value="true"/>
-    <property name="QueryText" value=""/>
-    <property name="Queryable" type="bool" value="false"/>
+    <property name="QueryText" value="Dit is een ton"/>
+    <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="0"/>
    </properties>
   </tile>
@@ -8119,17 +8119,17 @@
   </tile>
   <tile id="1014">
    <properties>
-    <property name="Collision" type="bool" value="true"/>
-    <property name="QueryText" value=""/>
-    <property name="Queryable" type="bool" value="false"/>
+    <property name="Collision" type="bool" value="false"/>
+    <property name="QueryText" value="Dit is een hek"/>
+    <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="0"/>
    </properties>
   </tile>
   <tile id="1015">
    <properties>
-    <property name="Collision" type="bool" value="true"/>
-    <property name="QueryText" value=""/>
-    <property name="Queryable" type="bool" value="false"/>
+    <property name="Collision" type="bool" value="false"/>
+    <property name="QueryText" value="Dit is een hek"/>
+    <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="0"/>
    </properties>
   </tile>
@@ -8152,16 +8152,16 @@
   <tile id="1018">
    <properties>
     <property name="Collision" type="bool" value="true"/>
-    <property name="QueryText" value=""/>
-    <property name="Queryable" type="bool" value="false"/>
+    <property name="QueryText" value="Dit is een ton"/>
+    <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="0"/>
    </properties>
   </tile>
   <tile id="1019">
    <properties>
     <property name="Collision" type="bool" value="true"/>
-    <property name="QueryText" value=""/>
-    <property name="Queryable" type="bool" value="false"/>
+    <property name="QueryText" value="Dit is een ton"/>
+    <property name="Queryable" type="bool" value="true"/>
     <property name="Type" type="int" value="0"/>
    </properties>
   </tile>
@@ -8374,11 +8374,11 @@
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,809,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,809,810,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,849,850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,889,890,0,975,976,0,979,980,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,929,930,0,1015,1016,0,1019,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

@@ -8,7 +8,10 @@ player.height = 64
 player.speed = 130
 player.isMoving = false
 player.dir = "down"
-
+player.text = ""
+player.talks = false
+player.talkTime = 800
+player.talkTimer = 0
 
 player.grids = {}
 player.grids.walk = anim8.newGrid(player.width, player.height, textures.player:getWidth(), textures.player:getHeight(), 0, 6, 0)
@@ -24,6 +27,7 @@ player.anim = player.animations.walkDown
 function player:update(dt)
   if player.isMoving then
       player.anim:update(dt)
+      player.talks=false
   end
 
   local vectorX = 0
@@ -57,7 +61,7 @@ function player:update(dt)
       -- zorgen dat de player alleen in de kijkrichting queriet
       local px, py = player:getPosition()
       if player.dir == "down" then
-          py=py + 60
+          py = py + 60
       elseif player.dir == "left" then
           px = px - 60
       elseif player.dir == "right" then
@@ -66,14 +70,12 @@ function player:update(dt)
           py = py - 60
         end
 
-      -- query met straal 20
-      local coll = world:queryCircleArea(px, py, 20, {'Queryable'})
+      -- query met straal 10 en laat Querytext zien die in map is gedefinieerd.
+      -- het kan zijn dat er meerdere objecten worden gevonden, hij pakt de eerste
+      local coll = world:queryCircleArea(px, py, 10, {'Queryable'})
       if #coll > 0 then
-        for k,v in pairs(coll) do
-          print(k,v)
-        end
-
-        love.timer.sleep(1)
+        player.talks = true
+        player.text = coll[1].QueryText
       end
   end
 

@@ -5,7 +5,7 @@ function loadTiledMap(path)
 
     local tileset = map.tilesets[1]
     map.tileset = tileset
-    map.image = love.graphics.newImage(tileset.image)
+    map.image = love.graphics.newImage('gfx/tiles/' .. tileset.image)
 
     map.frame = 0
     map.timer = 0.0
@@ -55,7 +55,7 @@ function loadTiledMap(path)
                 )
               testBlock:setType('static')
               testBlock:setCollisionClass('Queryable')
-              testBlock.text = map.tileset.tiles[tid].properties["QueryText"]
+              testBlock.QueryText = map.tileset.tiles[tid].properties["QueryText"]
             end
           end
         end

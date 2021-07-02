@@ -5,6 +5,7 @@ function love.load()
   anim8 = require('lib/anim8/anim8')
   world = windfield.newWorld()
   local _camera = require('lib/hump.camera')
+  Timer = require('lib/hump.timer')
 
   require("src/collisionClasses")
   createCollisionClasses()
@@ -12,9 +13,12 @@ function love.load()
   require('src/resources')
   require('src/player')
   require('src/tiledmap')
+  require('src/textbox')
 
   map = loadTiledMap('gfx/tiles/map')
   camera = _camera(player.x, player.y)
+  font = love.graphics.newFont(18)
+  love.graphics.setFont(font)
   --camera.smoother = _camera.smooth.linear(500)
 
 
@@ -23,7 +27,10 @@ end
 function love.update(dt)
 -- gameloop, elke frame update
   world:update(dt)
-  --map:update(dt)
+  while player.talkTimer > 0 do
+    player.talkTimer = player.talkTimer - dt
+    print(player.talkTimer)
+  end
 
   player:update(dt)
   camX, camY = player:getPosition()
@@ -46,9 +53,12 @@ end
 
 function love.draw()
 -- ook gameloop, elke frame, vooral voor graphics, geen vars veranderen
+
+
   camera:attach()
   world:draw()
   map:draw()
   player:draw()
   camera:detach()
+  textbox:draw()
 end
